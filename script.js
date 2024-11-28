@@ -81,18 +81,10 @@ const bookmarks = [
             // { icon: '<i class="fas fa-brain"></i>', label: "Allen", url: "https://www.allen.ac.in/indore/" }
         ]
     },
-    // {
-    //     bookmarks: [
-    //         { icon: '<i class="fas fa-book"></i>', label: "NROER", url: "http://nroer.gov.in/" },
-    //         { icon: '<i class="fas fa-brain"></i>', label: "Brilliant", url: "https://brilliant.org/" },
-    //         { icon: '<i class="fas fa-chalkboard-teacher"></i>', label: "Unacademy", url: "https://unacademy.com/" }
-    //     ]
-    // },
     {
         bookmarks: [
             { icon: '<i class="fas fa-film"></i>', label: "Movies", url: "https://binged.to/" },
             { icon: '<i class="fas fa-tv"></i>', label: "Anime", url: "https://hianime.to/" },
-            // { icon: '<i class="fas fa-book-open"></i>', label: "Manga", url: "https://comick.io/home" },
             { icon: '<i class="fa-solid fa-n"></i>', label: "Netflix", url: "https://netmirror.app/" }
         ]
     }

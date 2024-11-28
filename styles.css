@@ -107,7 +107,6 @@ body {
   border: none;
   outline: none;
   border-bottom: 0.130rem solid #2c1e1e;
-  margin: 5px 0;
   order: 1;
 }
 
@@ -200,25 +199,25 @@ body {
 }
 
 #weather-widget {
-    width: 100%;
-    text-align: center;
-    color: #130007;
-  }
-  
-  #weather-widget .weather-info {
-    font-size: 0.8rem;
-    color: #130007;
-  }
+  width: 100%;
+  text-align: center;
+  color: #130007;
+}
+
+#weather-widget .weather-info {
+  font-size: 0.8rem;
+  color: #130007;
+}
 
 @media (max-width: 800px) {
   .showcase img.landscape {
     display: none;
   }
-  
+
   .showcase img.portrait {
     display: block;
   }
-  
+
   .jarvis {
     width: 95%;
     padding: 0.8rem;
@@ -256,7 +255,7 @@ body {
   #searchbox>input::placeholder {
     font-size: 10px;
   }
-  
+
 
   .bookmark-group {
     width: 20%;
