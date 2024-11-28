@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+.showcase img.landscape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.showcase img.portrait {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  color: #FFF;
+}
+
+.jarvis {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1150px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* color: #E0E0E0; */
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.jarvis>main {
+  padding: 1rem;
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  align-self: flex-start;
+  width: 100%;
+}
+
+#searchbox {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  flex-direction: row;
+}
+
+#searchbox>input {
+  height: 2rem;
+  flex: 1;
+  color: #130007;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.130rem solid #2c1e1e;
+  margin: 5px 0;
+  order: 1;
+}
+
+#searchbox>button {
+  width: 3rem;
+  height: 3rem;
+  color: #130007;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+}
+
+#searchbox>button>.feather-search {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+#searchbox>button:hover,
+#searchbox>button:focus-visible {
+  color: #2c1e1e;
+}
+
+#searchbox>button:focus-visible {
+  background: #222226;
+  outline: 0.125rem solid #130007;
+}
+
+#searchbox>input:focus-visible {
+  border-color: #2c1e1e;
+}
+
+#searchbox>input::placeholder {
+  color: #2c1e1e;
+}
+
+#bookmarks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bookmark-group {
+  width: 16.66%;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.bookmark-group>ul {
+  height: 80px;
+}
+
+.bookmark-group>ul>li {
+  position: relative;
+  list-style: none;
+}
+
+.bookmark-group>ul>li>a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  width: 100%;
+  outline: none;
+  font-size: 0.8rem;
+  color: #130007;
+  text-decoration: none;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.bookmark-group>ul>li>a i {
+  font-size: 1rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+.bookmark-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#weather-widget {
+    width: 100%;
+    text-align: center;
+    color: #130007;
+  }
+  
+  #weather-widget .weather-info {
+    font-size: 0.8rem;
+    color: #130007;
+  }
+
+@media (max-width: 800px) {
+  .showcase img.landscape {
+    display: none;
+  }
+  
+  .showcase img.portrait {
+    display: block;
+  }
+  
+  .jarvis {
+    width: 95%;
+    padding: 0.8rem;
+    height: 200px;
+    min-height: 200px;
+  }
+
+
+  .jarvis>main {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  #searchbox {
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #searchbox input {
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  #searchbox button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #searchbox button .feather-search {
+    width: 1.3rem;
+    height: 1.5rem;
+  }
+
+  #searchbox>input::placeholder {
+    font-size: 10px;
+  }
+  
+
+  .bookmark-group {
+    width: 20%;
+    margin-top: 5px;
+  }
+
+
+  .bookmark-group>ul {
+    height: 50px;
+  }
+
+  .bookmark-group>ul>li>a {
+    font-size: 0.6rem;
+    gap: 2px;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .bookmark-group>ul>li>a i {
+    font-size: 0.9rem;
+    min-width: 16px;
+  }
+
+  .bookmark-label {
+    display: none;
+  }
+
+  #weather-widget {
+    margin-top: 5px;
+  }
+
+  #weather-widget .weather-info {
+    font-size: 0.7rem;
+  }
+}

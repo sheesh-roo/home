@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="shortcut icon" type="icon" href="assests/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section class="showcase">
+        <img class="landscape" src="assests/landscape.jpg" loading="lazy" width="1920" height="1080" alt="landscape background">
+        <img class="portrait" src="assests/portrait.jpg" loading="lazy" width="1080" height="1920" alt="portrait background">
+        <div class="overlay"></div>
+        <div class="jarvis">
+            <main>
+                <div id="searchbox">
+                    <input type="text" id="search-input" placeholder=" search here, roo..." autocomplete="off">
+                    <button id="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="24" 
+                        height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none"
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"
+                        class="feather feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span class="visually-hidden">Search</span>
+                    </button>
+                </div>
+                <div id="bookmarks"></div>
+            </main>
+            <div id="weather-widget"></div>
+        </div>
+    </section>
+</body>
+</html>
