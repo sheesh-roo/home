@@ -70,7 +70,8 @@ const bookmarks = [
     {
         bookmarks: [
             { icon: '<i class="fa-solid fa-o"></i>', label: "ChatGPT", url: "https://chatgpt.com/" },
-            { icon: '<i class="fa-regular fa-gem"></i>', label: "Gemini", url: "https://gemini.google.com/app?hl=en-IN" }
+            { icon: '<i class="fas fa-brain"></i>', label: "Gemini", url: "https://gemini.google.com/app?hl=en-IN" },
+            { icon: '<i class="fa-solid fa-ghost"></i>', label: "Gamma", url: "https://gamma.app/" }
         ]
     },
     {
