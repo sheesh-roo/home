@@ -209,6 +209,18 @@ body {
   color: #130007;
 }
 
+.footer {
+  text-align: center;
+  padding: 10px;
+  /* background-color: #222; */
+  color: #fff;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+
+
 @media (max-width: 800px) {
   .showcase img.landscape {
     display: none;
@@ -224,7 +236,6 @@ body {
     height: 200px;
     min-height: 200px;
   }
-
 
   .jarvis>main {
     font-size: 0.9rem;
@@ -256,26 +267,23 @@ body {
     font-size: 10px;
   }
 
-
   .bookmark-group {
     width: 20%;
     margin-top: 5px;
   }
-
 
   .bookmark-group>ul {
     height: 50px;
   }
 
   .bookmark-group>ul>li>a {
-    font-size: 0.6rem;
-    gap: 2px;
+    padding: 4px 0; 
     padding-left: 0;
     justify-content: center;
   }
 
   .bookmark-group>ul>li>a i {
-    font-size: 0.9rem;
+    font-size: 0.9rem;    
     min-width: 16px;
   }
 
@@ -291,3 +299,4 @@ body {
     font-size: 0.7rem;
   }
 }
+
