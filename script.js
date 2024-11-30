@@ -71,7 +71,7 @@ const bookmarks = [
         bookmarks: [
             { icon: '<i class="fa-solid fa-o"></i>', label: "ChatGPT", url: "https://chatgpt.com/" },
             { icon: '<i class="fas fa-brain"></i>', label: "Gemini", url: "https://gemini.google.com/app?hl=en-IN" },
-            { icon: '<i class="fa-solid fa-ghost"></i>', label: "Gamma", url: "https://gamma.app/" }
+            { icon: '<i class="fa-brands fa-slack"></i>', label: "Gamma", url: "https://gamma.app/" }
         ]
     },
     {
@@ -84,7 +84,7 @@ const bookmarks = [
     },
     {
         bookmarks: [
-            { icon: '<i class="fas fa-film"></i>', label: "Movies", url: "https://binged.to/" },
+            { icon: '<i class="fa-solid fa-video"></i>', label: "Movies", url: "https://binged.to/" },
             { icon: '<i class="fas fa-tv"></i>', label: "Anime", url: "https://hianime.to/" },
             { icon: '<i class="fa-solid fa-n"></i>', label: "Netflix", url: "https://netmirror.app/" }
         ]
